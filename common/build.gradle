@@ -1,13 +1,15 @@
 plugins {
-    //id "cosmicloom"
+    //Cosmic Quilt
+    id "cosmicloom"
 
-
-    id "jigsaw"
-    id "com.github.johnrengelman.shadow"
+    //Puzzle
+//    id "jigsaw"
+//    id "com.github.johnrengelman.shadow"
 }
 
  loom {
-//    accessWidenerPath = file("src/main/resources/${mod_id}.accesswidener")
+////    accessWidenerPath = file("src/main/resources/${mod_id}.accesswidener") only uncomment if you need access wideners
+     //also need to change the build.gradle for puzzle/quilt to change the access widener
 
 }
 repositories {
@@ -18,13 +20,13 @@ repositories {
 }
 
 dependencies {
-    cosmicReach("finalforeach:cosmicreach:${cosmic_reach_version}")
+    //Puzzle
+    //cosmicReach("finalforeach:cosmicreach:${cosmic_reach_version}") // quilt can run off of jigsaw but doesnt build correnctly
 
-
-//    cosmicReach(loom.cosmicReachClient("pre-alpha", cosmic_reach_version))
-//    cosmicReachServer(loom.cosmicReachServer("pre-alpha", cosmic_reach_version))
-//    // Cosmic Quilt
-//    modImplementation(loom.cosmicQuilt(cosmic_quilt_version))
+    // Cosmic Quilt
+    cosmicReach(loom.cosmicReachClient("pre-alpha", cosmic_reach_version))
+    cosmicReachServer(loom.cosmicReachServer("pre-alpha", cosmic_reach_version))
+    modImplementation(loom.cosmicQuilt(cosmic_quilt_version))
 }
 
 
