@@ -23,9 +23,10 @@ buildscript() {
         classpath "com.github.PuzzleLoader:jigsaw:$jigsaw_gradle_version"
     }
 }
-
+include("common")
 include("puzzle")
 include("quilt")
 
-rootProject.name = 'ModMixer'
+
+rootProject.name = 'BlockSwitcher'
 

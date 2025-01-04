@@ -1,4 +1,4 @@
-package com.example.ExampleMod;
+package com.shfloop.BlockSwitcher;
 
 import finalforeach.cosmicreach.util.Identifier;
 import org.apache.logging.log4j.LogManager;

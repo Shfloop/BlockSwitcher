@@ -12,17 +12,18 @@
   },
   "entrypoints": {
     "client_init": [
-      "com.example.ExampleMod.ExampleModClient"
+      "com.shfloop.BlockSwitcher.ExampleModClient"
     ],
     "init": [
-      "com.example.ExampleMod.ExampleMod"
+      "com.shfloop.BlockSwitcher.ExampleMod"
     ],
     "preInit": [
-      "com.example.ExampleMod.ExampleModPreinit"
+      "com.shfloop.BlockSwitcher.ExampleModPreinit"
     ]
   },
   "mixins": [
-    "${mod_id}.mixins.json"
+    "${mod_id}.mixins.json",
+    "mixins.${mod_id}.json"
   ],
   "depends": {
     "cosmic-reach": ">=${cosmic_reach_version}",

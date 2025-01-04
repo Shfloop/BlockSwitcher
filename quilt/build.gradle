@@ -23,8 +23,23 @@ dependencies {
     cosmicReachServer(loom.cosmicReachServer("pre-alpha", cosmic_reach_version))
     // Cosmic Quilt
     modImplementation(loom.cosmicQuilt(cosmic_quilt_version))
+
+
+
+    implementation project(":common")
 }
 
+tasks.withType(JavaCompile).configureEach {
+    source(project(":common").sourceSets.main.allSource)
+}
+tasks.withType(Javadoc).configureEach {
+    source(project(":common").sourceSets.main.allJava)
+}
+
+
+processResources {
+    from project(":common").sourceSets.main.resources
+}
 java {
 	withSourcesJar()
 	// withJavadocJar() // If docs are included with the project, this line can be un-commented

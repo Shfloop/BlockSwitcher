@@ -26,7 +26,7 @@
     },
 
     "entrypoints": {
-      "init": "com.example.ExampleMod.ExampleMod"
+      "init": "com.shfloop.BlockSwitcher.BlockSwitcherQuilt"
     },
 
     "depends": [
@@ -42,5 +42,8 @@
   },
 
   "access_widener": "${mod_id}.accesswidener",
-  "mixin": "${mod_id}.mixins.json"
+  "mixin": [
+    "${mod_id}.mixins.json",
+    "mixins.${mod_id}.json"
+  ]
 }

@@ -1,4 +1,4 @@
-package com.example.ExampleMod;
+package com.shfloop.BlockSwitcher;
 
 import com.github.puzzle.core.loader.launch.provider.mod.entrypoint.impls.ClientModInitializer;
 

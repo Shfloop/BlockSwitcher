@@ -1,0 +1,35 @@
+plugins {
+    //id "cosmicloom"
+
+
+    id "jigsaw"
+    id "com.github.johnrengelman.shadow"
+}
+
+ loom {
+//    accessWidenerPath = file("src/main/resources/${mod_id}.accesswidener")
+
+}
+repositories {
+    mavenCentral()
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    cosmicReach("finalforeach:cosmicreach:${cosmic_reach_version}")
+
+
+//    cosmicReach(loom.cosmicReachClient("pre-alpha", cosmic_reach_version))
+//    cosmicReachServer(loom.cosmicReachServer("pre-alpha", cosmic_reach_version))
+//    // Cosmic Quilt
+//    modImplementation(loom.cosmicQuilt(cosmic_quilt_version))
+}
+
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
