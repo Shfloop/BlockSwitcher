@@ -8,7 +8,7 @@
     "${mod_developer}"
   ],
   "meta": {
-    "icon": "${mod_id}:icons/icon.png"
+    "icon": "${mod_id}:icon.png"
   },
   "entrypoints": {
     "client_init": [

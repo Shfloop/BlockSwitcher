@@ -2,7 +2,6 @@ package com.shfloop.BlockSwitcher.mixins;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.shfloop.BlockSwitcher.RadialBlockStateSelector;
 import finalforeach.cosmicreach.gamestates.GameState;
@@ -27,7 +26,7 @@ public abstract class UIMixin {
 
 
     @Shadow public static boolean uiNeedMouse;
-    private static final Vector2 tmpTextDim = new Vector2();
+
     private static float radialMenuCountDown = 0f;
     private static RadialBlockStateSelector radialMenu = new RadialBlockStateSelector();
 

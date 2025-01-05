@@ -273,7 +273,7 @@ public class RadialBlockStateSelector {
         this.shown = true;
     }
     public void hide() {
-        Gdx.input.setCursorPosition(Gdx.graphics.getWidth() / 2, Gdx.graphics.getHeight() / 2); //this might fix issues with camera moving after cycle selecting block
+        //Gdx.input.setCursorPosition(Gdx.graphics.getWidth() / 2, Gdx.graphics.getHeight() / 2); //this might fix issues with camera moving after cycle selecting block
         //though im not sure why its happeneing in the first palce
         this.shown = false;
 
